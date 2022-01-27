@@ -20,9 +20,9 @@ public class AddressBookDBService {
 	}
 
 	private Connection getConnection() throws SQLException {
-		String jdbcURL = "jdbc:mysql://localhost:3306/address_bookjdbc?useSSL=false";
+		String jdbcURL = "jdbc:mysql://localhost:3306/addressbook_service?useSSL=false";
 		String username = "root";
-		String password = "rekha15";
+		String password = "******";
 		Connection con;
 		System.out.println("Connecting to database:" + jdbcURL);
 		con = DriverManager.getConnection(jdbcURL, username, password);
