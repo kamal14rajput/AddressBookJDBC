@@ -19,8 +19,8 @@ public class AddressBookTest {
 	@Test
 	public void givenAddressBook_WhenUpdate_ShouldSyncWithDB() throws AddressBookException {
 		AddressBookService addressBookService = new AddressBookService();
-		addressBookService.updateRecord("Rekha", "GKW Lauout");
-		boolean result = addressBookService.checkUpdatedRecordSyncWithDatabase("Rekha");
+		addressBookService.updateRecord("kamal", "pune");
+		boolean result = addressBookService.checkUpdatedRecordSyncWithDatabase("kamal ");
 		Assert.assertTrue(result);
 	}
 }
